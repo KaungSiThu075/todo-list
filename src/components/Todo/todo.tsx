@@ -52,7 +52,7 @@ export default function TodoApp() {
       .map((t) => {
         return t;
       })
-      .filter((t, index) => ID !== index);
+      .filter((_, index) => ID !== index);
 
     console.log(newTodo);
     setTodoList(newTodo);
